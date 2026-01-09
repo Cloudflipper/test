@@ -1,0 +1,4 @@
+Model: tgcn
+MAE: 5.263481
+RMSE: 8.272839
+MAPE: 15.676332

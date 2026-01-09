@@ -1,0 +1,4 @@
+Model: tgcn_direct
+MAE: 5.105671
+RMSE: 7.859577
+MAPE: 14.431551
