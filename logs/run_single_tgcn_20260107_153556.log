@@ -1,0 +1,146 @@
+2026-01-07 15:35:56,779 - run_single_tgcn - INFO - Running model: tgcn
+2026-01-07 15:35:56,779 - run_single_tgcn - INFO - Device: cpu
+2026-01-07 15:35:56,779 - run_single_tgcn - INFO - Creating dataloaders...
+2026-01-07 15:35:56,860 - run_single_tgcn - INFO - ===== Quick Sanity Check (A) =====
+2026-01-07 15:35:56,862 - run_single_tgcn - INFO - A: y(norm) range: -4.096847 ~ 0.863128 | y shape: (32, 12, 207, 1)
+2026-01-07 15:35:56,862 - run_single_tgcn - INFO - ==================================
+2026-01-07 15:35:56,862 - run_single_tgcn - INFO - ===== Transform Stats (B) =====
+2026-01-07 15:35:56,862 - run_single_tgcn - INFO - transform type: <class 'datasets.transforms.DataTransform'>
+2026-01-07 15:35:56,862 - run_single_tgcn - INFO - transform.scaler.mean: tensor range 59.326862 ~ 59.326862
+2026-01-07 15:35:56,863 - run_single_tgcn - INFO - transform.scaler.std: tensor range 12.365655 ~ 12.365655
+2026-01-07 15:35:56,863 - run_single_tgcn - INFO - ================================
+2026-01-07 15:35:56,863 - run_single_tgcn - INFO - Building graph...
+2026-01-07 15:35:56,868 - run_single_tgcn - INFO - Adj shape: (207, 207)
+2026-01-07 15:35:56,868 - run_single_tgcn - INFO - Adj min/max: 0.000000 / 1.000000
+2026-01-07 15:35:56,869 - run_single_tgcn - INFO - Creating model...
+2026-01-07 15:35:56,869 - run_single_tgcn - INFO - LOS dataset: 207 nodes, 1 features
+2026-01-07 15:35:57,013 - run_single_tgcn - INFO - Model parameters: 12,737
+2026-01-07 15:35:57,678 - run_single_tgcn - INFO - Starting training...
+2026-01-07 15:35:57,679 - run_single_tgcn - INFO - Starting training for 100 epochs
+2026-01-07 15:36:10,942 - run_single_tgcn - INFO - Epoch 1/100 - Train Loss: 0.670573, Val Loss: 0.544541, Val MAE: 0.512761, Val RMSE: 0.756811, Val MAPE: 314.348877, Time: 13.26s
+2026-01-07 15:36:23,185 - run_single_tgcn - INFO - Epoch 2/100 - Train Loss: 0.541813, Val Loss: 0.511364, Val MAE: 0.502563, Val RMSE: 0.731520, Val MAPE: 285.527649, Time: 12.24s
+2026-01-07 15:36:36,213 - run_single_tgcn - INFO - Epoch 3/100 - Train Loss: 0.508951, Val Loss: 0.488062, Val MAE: 0.479681, Val RMSE: 0.715295, Val MAPE: 291.158417, Time: 13.02s
+2026-01-07 15:36:50,859 - run_single_tgcn - INFO - Epoch 4/100 - Train Loss: 0.477734, Val Loss: 0.467508, Val MAE: 0.466449, Val RMSE: 0.700065, Val MAPE: 296.350922, Time: 14.64s
+2026-01-07 15:37:05,273 - run_single_tgcn - INFO - Epoch 5/100 - Train Loss: 0.455645, Val Loss: 0.454436, Val MAE: 0.456337, Val RMSE: 0.690254, Val MAPE: 295.439667, Time: 14.41s
+2026-01-07 15:37:20,281 - run_single_tgcn - INFO - Epoch 6/100 - Train Loss: 0.444791, Val Loss: 0.445665, Val MAE: 0.450236, Val RMSE: 0.684095, Val MAPE: 303.663544, Time: 15.00s
+2026-01-07 15:37:36,975 - run_single_tgcn - INFO - Epoch 7/100 - Train Loss: 0.430153, Val Loss: 0.451158, Val MAE: 0.451685, Val RMSE: 0.688625, Val MAPE: 329.852325, Time: 16.68s
+2026-01-07 15:37:53,307 - run_single_tgcn - INFO - Epoch 8/100 - Train Loss: 0.430141, Val Loss: 0.433744, Val MAE: 0.448508, Val RMSE: 0.674363, Val MAPE: 295.285004, Time: 16.33s
+2026-01-07 15:38:10,255 - run_single_tgcn - INFO - Epoch 9/100 - Train Loss: 0.413859, Val Loss: 0.424368, Val MAE: 0.436815, Val RMSE: 0.667477, Val MAPE: 299.354980, Time: 16.94s
+2026-01-07 15:38:27,698 - run_single_tgcn - INFO - Epoch 10/100 - Train Loss: 0.403871, Val Loss: 0.422601, Val MAE: 0.433608, Val RMSE: 0.666334, Val MAPE: 288.475830, Time: 17.44s
+2026-01-07 15:38:44,936 - run_single_tgcn - INFO - Epoch 11/100 - Train Loss: 0.399161, Val Loss: 0.421605, Val MAE: 0.430979, Val RMSE: 0.665964, Val MAPE: 303.358612, Time: 17.23s
+2026-01-07 15:39:01,786 - run_single_tgcn - INFO - Epoch 12/100 - Train Loss: 0.389604, Val Loss: 0.419899, Val MAE: 0.429350, Val RMSE: 0.664641, Val MAPE: 303.150085, Time: 16.84s
+2026-01-07 15:39:19,949 - run_single_tgcn - INFO - Epoch 13/100 - Train Loss: 0.385058, Val Loss: 0.416275, Val MAE: 0.433740, Val RMSE: 0.661394, Val MAPE: 308.490326, Time: 18.16s
+2026-01-07 15:39:38,355 - run_single_tgcn - INFO - Epoch 14/100 - Train Loss: 0.379197, Val Loss: 0.405462, Val MAE: 0.427305, Val RMSE: 0.652840, Val MAPE: 284.402832, Time: 18.40s
+2026-01-07 15:39:57,821 - run_single_tgcn - INFO - Epoch 15/100 - Train Loss: 0.373868, Val Loss: 0.428681, Val MAE: 0.440477, Val RMSE: 0.671668, Val MAPE: 323.840149, Time: 19.46s
+2026-01-07 15:40:16,213 - run_single_tgcn - INFO - Epoch 16/100 - Train Loss: 0.376779, Val Loss: 0.403915, Val MAE: 0.421907, Val RMSE: 0.652132, Val MAPE: 291.355042, Time: 18.39s
+2026-01-07 15:40:30,640 - run_single_tgcn - INFO - Epoch 17/100 - Train Loss: 0.367997, Val Loss: 0.401336, Val MAE: 0.424093, Val RMSE: 0.649991, Val MAPE: 291.440216, Time: 14.42s
+2026-01-07 15:40:45,094 - run_single_tgcn - INFO - Epoch 18/100 - Train Loss: 0.358971, Val Loss: 0.400083, Val MAE: 0.423556, Val RMSE: 0.648875, Val MAPE: 302.366241, Time: 14.45s
+2026-01-07 15:40:59,406 - run_single_tgcn - INFO - Epoch 19/100 - Train Loss: 0.356444, Val Loss: 0.406274, Val MAE: 0.432058, Val RMSE: 0.653588, Val MAPE: 312.203613, Time: 14.31s
+2026-01-07 15:41:13,851 - run_single_tgcn - INFO - Epoch 20/100 - Train Loss: 0.358143, Val Loss: 0.395144, Val MAE: 0.413685, Val RMSE: 0.644967, Val MAPE: 290.673004, Time: 14.44s
+2026-01-07 15:41:28,531 - run_single_tgcn - INFO - Epoch 21/100 - Train Loss: 0.349999, Val Loss: 0.397457, Val MAE: 0.421799, Val RMSE: 0.647019, Val MAPE: 302.626282, Time: 14.67s
+2026-01-07 15:41:42,732 - run_single_tgcn - INFO - Epoch 22/100 - Train Loss: 0.346887, Val Loss: 0.409650, Val MAE: 0.434330, Val RMSE: 0.656352, Val MAPE: 305.861542, Time: 14.20s
+2026-01-07 15:41:57,021 - run_single_tgcn - INFO - Epoch 23/100 - Train Loss: 0.345931, Val Loss: 0.388559, Val MAE: 0.419026, Val RMSE: 0.639471, Val MAPE: 281.972321, Time: 14.29s
+2026-01-07 15:42:11,468 - run_single_tgcn - INFO - Epoch 24/100 - Train Loss: 0.339051, Val Loss: 0.398370, Val MAE: 0.417647, Val RMSE: 0.648218, Val MAPE: 300.800781, Time: 14.44s
+2026-01-07 15:42:26,014 - run_single_tgcn - INFO - Epoch 25/100 - Train Loss: 0.337170, Val Loss: 0.392952, Val MAE: 0.415024, Val RMSE: 0.643551, Val MAPE: 299.281891, Time: 14.55s
+2026-01-07 15:42:40,311 - run_single_tgcn - INFO - Epoch 26/100 - Train Loss: 0.332538, Val Loss: 0.403545, Val MAE: 0.421994, Val RMSE: 0.652301, Val MAPE: 320.438171, Time: 14.30s
+2026-01-07 15:42:56,158 - run_single_tgcn - INFO - Epoch 27/100 - Train Loss: 0.331791, Val Loss: 0.391308, Val MAE: 0.425043, Val RMSE: 0.640736, Val MAPE: 297.767822, Time: 15.85s
+2026-01-07 15:43:12,049 - run_single_tgcn - INFO - Epoch 28/100 - Train Loss: 0.330074, Val Loss: 0.392579, Val MAE: 0.414032, Val RMSE: 0.643487, Val MAPE: 301.633423, Time: 15.89s
+2026-01-07 15:43:27,476 - run_single_tgcn - INFO - Epoch 29/100 - Train Loss: 0.329524, Val Loss: 0.384492, Val MAE: 0.411994, Val RMSE: 0.636037, Val MAPE: 284.879730, Time: 15.43s
+2026-01-07 15:43:41,954 - run_single_tgcn - INFO - Epoch 30/100 - Train Loss: 0.330838, Val Loss: 0.398753, Val MAE: 0.421389, Val RMSE: 0.648544, Val MAPE: 316.587372, Time: 14.47s
+2026-01-07 15:43:56,302 - run_single_tgcn - INFO - Epoch 31/100 - Train Loss: 0.327733, Val Loss: 0.382321, Val MAE: 0.405103, Val RMSE: 0.635184, Val MAPE: 294.609375, Time: 14.35s
+2026-01-07 15:44:11,530 - run_single_tgcn - INFO - Epoch 32/100 - Train Loss: 0.319981, Val Loss: 0.375807, Val MAE: 0.404907, Val RMSE: 0.629458, Val MAPE: 293.251709, Time: 15.22s
+2026-01-07 15:44:27,877 - run_single_tgcn - INFO - Epoch 33/100 - Train Loss: 0.317852, Val Loss: 0.390396, Val MAE: 0.421028, Val RMSE: 0.640682, Val MAPE: 308.078949, Time: 16.34s
+2026-01-07 15:44:44,378 - run_single_tgcn - INFO - Epoch 34/100 - Train Loss: 0.314403, Val Loss: 0.379467, Val MAE: 0.414554, Val RMSE: 0.631727, Val MAPE: 297.333008, Time: 16.50s
+2026-01-07 15:45:01,133 - run_single_tgcn - INFO - Epoch 35/100 - Train Loss: 0.311459, Val Loss: 0.382533, Val MAE: 0.412347, Val RMSE: 0.634355, Val MAPE: 299.433899, Time: 16.75s
+2026-01-07 15:45:17,840 - run_single_tgcn - INFO - Epoch 36/100 - Train Loss: 0.314491, Val Loss: 0.388613, Val MAE: 0.411687, Val RMSE: 0.640530, Val MAPE: 303.454315, Time: 16.71s
+2026-01-07 15:45:33,681 - run_single_tgcn - INFO - Epoch 37/100 - Train Loss: 0.313615, Val Loss: 0.375887, Val MAE: 0.407253, Val RMSE: 0.628847, Val MAPE: 293.587189, Time: 15.84s
+2026-01-07 15:45:49,649 - run_single_tgcn - INFO - Epoch 38/100 - Train Loss: 0.307098, Val Loss: 0.378903, Val MAE: 0.403240, Val RMSE: 0.632192, Val MAPE: 301.667938, Time: 15.97s
+2026-01-07 15:46:05,472 - run_single_tgcn - INFO - Epoch 39/100 - Train Loss: 0.308167, Val Loss: 0.377891, Val MAE: 0.415752, Val RMSE: 0.630085, Val MAPE: 285.760803, Time: 15.82s
+2026-01-07 15:46:21,576 - run_single_tgcn - INFO - Epoch 40/100 - Train Loss: 0.302981, Val Loss: 0.368094, Val MAE: 0.400666, Val RMSE: 0.623190, Val MAPE: 296.053772, Time: 16.10s
+2026-01-07 15:46:37,392 - run_single_tgcn - INFO - Epoch 41/100 - Train Loss: 0.303673, Val Loss: 0.391600, Val MAE: 0.412679, Val RMSE: 0.642785, Val MAPE: 321.148468, Time: 15.81s
+2026-01-07 15:46:53,427 - run_single_tgcn - INFO - Epoch 42/100 - Train Loss: 0.300527, Val Loss: 0.384137, Val MAE: 0.408898, Val RMSE: 0.636367, Val MAPE: 306.067200, Time: 16.03s
+2026-01-07 15:47:09,297 - run_single_tgcn - INFO - Epoch 43/100 - Train Loss: 0.301594, Val Loss: 0.383739, Val MAE: 0.413479, Val RMSE: 0.635945, Val MAPE: 311.009979, Time: 15.87s
+2026-01-07 15:47:25,378 - run_single_tgcn - INFO - Epoch 44/100 - Train Loss: 0.298457, Val Loss: 0.388665, Val MAE: 0.415742, Val RMSE: 0.640612, Val MAPE: 327.009705, Time: 16.08s
+2026-01-07 15:47:41,403 - run_single_tgcn - INFO - Epoch 45/100 - Train Loss: 0.295897, Val Loss: 0.375097, Val MAE: 0.400718, Val RMSE: 0.628405, Val MAPE: 304.561340, Time: 16.02s
+2026-01-07 15:47:57,633 - run_single_tgcn - INFO - Epoch 46/100 - Train Loss: 0.294450, Val Loss: 0.369161, Val MAE: 0.399792, Val RMSE: 0.623731, Val MAPE: 297.069427, Time: 16.23s
+2026-01-07 15:48:14,664 - run_single_tgcn - INFO - Epoch 47/100 - Train Loss: 0.290580, Val Loss: 0.366206, Val MAE: 0.398450, Val RMSE: 0.621644, Val MAPE: 293.610840, Time: 17.03s
+2026-01-07 15:48:33,103 - run_single_tgcn - INFO - Epoch 48/100 - Train Loss: 0.290438, Val Loss: 0.375269, Val MAE: 0.405854, Val RMSE: 0.628485, Val MAPE: 304.769440, Time: 18.43s
+2026-01-07 15:48:49,695 - run_single_tgcn - INFO - Epoch 49/100 - Train Loss: 0.290199, Val Loss: 0.380905, Val MAE: 0.409536, Val RMSE: 0.633834, Val MAPE: 306.269928, Time: 16.59s
+2026-01-07 15:49:05,714 - run_single_tgcn - INFO - Epoch 50/100 - Train Loss: 0.288663, Val Loss: 0.379829, Val MAE: 0.408027, Val RMSE: 0.632451, Val MAPE: 298.746674, Time: 16.02s
+2026-01-07 15:49:21,675 - run_single_tgcn - INFO - Epoch 51/100 - Train Loss: 0.285366, Val Loss: 0.377660, Val MAE: 0.401561, Val RMSE: 0.631546, Val MAPE: 303.507324, Time: 15.96s
+2026-01-07 15:49:37,580 - run_single_tgcn - INFO - Epoch 52/100 - Train Loss: 0.283645, Val Loss: 0.376545, Val MAE: 0.408327, Val RMSE: 0.629508, Val MAPE: 304.383148, Time: 15.90s
+2026-01-07 15:49:54,042 - run_single_tgcn - INFO - Epoch 53/100 - Train Loss: 0.289334, Val Loss: 0.383798, Val MAE: 0.410543, Val RMSE: 0.636308, Val MAPE: 319.896210, Time: 16.46s
+2026-01-07 15:50:11,086 - run_single_tgcn - INFO - Epoch 54/100 - Train Loss: 0.284389, Val Loss: 0.371204, Val MAE: 0.404118, Val RMSE: 0.625202, Val MAPE: 307.248291, Time: 17.04s
+2026-01-07 15:50:27,034 - run_single_tgcn - INFO - Epoch 55/100 - Train Loss: 0.280955, Val Loss: 0.358489, Val MAE: 0.389176, Val RMSE: 0.615247, Val MAPE: 284.289978, Time: 15.95s
+2026-01-07 15:50:43,096 - run_single_tgcn - INFO - Epoch 56/100 - Train Loss: 0.283022, Val Loss: 0.362335, Val MAE: 0.392077, Val RMSE: 0.618647, Val MAPE: 291.250671, Time: 16.06s
+2026-01-07 15:50:59,014 - run_single_tgcn - INFO - Epoch 57/100 - Train Loss: 0.277047, Val Loss: 0.376152, Val MAE: 0.403564, Val RMSE: 0.630029, Val MAPE: 317.543304, Time: 15.92s
+2026-01-07 15:51:15,005 - run_single_tgcn - INFO - Epoch 58/100 - Train Loss: 0.276245, Val Loss: 0.378598, Val MAE: 0.403673, Val RMSE: 0.631906, Val MAPE: 313.535400, Time: 15.99s
+2026-01-07 15:51:31,246 - run_single_tgcn - INFO - Epoch 59/100 - Train Loss: 0.277005, Val Loss: 0.364392, Val MAE: 0.396964, Val RMSE: 0.619698, Val MAPE: 301.225830, Time: 16.24s
+2026-01-07 15:51:47,392 - run_single_tgcn - INFO - Epoch 60/100 - Train Loss: 0.282954, Val Loss: 0.370343, Val MAE: 0.395350, Val RMSE: 0.625430, Val MAPE: 309.509338, Time: 16.15s
+2026-01-07 15:52:03,877 - run_single_tgcn - INFO - Epoch 61/100 - Train Loss: 0.274201, Val Loss: 0.357920, Val MAE: 0.395456, Val RMSE: 0.614189, Val MAPE: 291.977783, Time: 16.48s
+2026-01-07 15:52:20,045 - run_single_tgcn - INFO - Epoch 62/100 - Train Loss: 0.271597, Val Loss: 0.378427, Val MAE: 0.404489, Val RMSE: 0.631593, Val MAPE: 312.851929, Time: 16.16s
+2026-01-07 15:52:35,999 - run_single_tgcn - INFO - Epoch 63/100 - Train Loss: 0.272956, Val Loss: 0.365982, Val MAE: 0.400750, Val RMSE: 0.619735, Val MAPE: 299.816315, Time: 15.95s
+2026-01-07 15:52:51,875 - run_single_tgcn - INFO - Epoch 64/100 - Train Loss: 0.269288, Val Loss: 0.370942, Val MAE: 0.399544, Val RMSE: 0.625825, Val MAPE: 306.334869, Time: 15.88s
+2026-01-07 15:53:07,951 - run_single_tgcn - INFO - Epoch 65/100 - Train Loss: 0.269936, Val Loss: 0.365407, Val MAE: 0.389914, Val RMSE: 0.621439, Val MAPE: 298.714783, Time: 16.08s
+2026-01-07 15:53:24,285 - run_single_tgcn - INFO - Epoch 66/100 - Train Loss: 0.269699, Val Loss: 0.379540, Val MAE: 0.407705, Val RMSE: 0.632149, Val MAPE: 321.773376, Time: 16.33s
+2026-01-07 15:53:40,429 - run_single_tgcn - INFO - Epoch 67/100 - Train Loss: 0.270734, Val Loss: 0.364445, Val MAE: 0.398841, Val RMSE: 0.619686, Val MAPE: 300.205811, Time: 16.14s
+2026-01-07 15:53:56,322 - run_single_tgcn - INFO - Epoch 68/100 - Train Loss: 0.267628, Val Loss: 0.381665, Val MAE: 0.408643, Val RMSE: 0.631935, Val MAPE: 309.998413, Time: 15.89s
+2026-01-07 15:54:12,139 - run_single_tgcn - INFO - Epoch 69/100 - Train Loss: 0.268588, Val Loss: 0.352428, Val MAE: 0.390990, Val RMSE: 0.609387, Val MAPE: 293.997772, Time: 15.82s
+2026-01-07 15:54:28,007 - run_single_tgcn - INFO - Epoch 70/100 - Train Loss: 0.270405, Val Loss: 0.350494, Val MAE: 0.389033, Val RMSE: 0.607747, Val MAPE: 289.432861, Time: 15.86s
+2026-01-07 15:54:45,068 - run_single_tgcn - INFO - Epoch 71/100 - Train Loss: 0.265712, Val Loss: 0.348531, Val MAE: 0.386900, Val RMSE: 0.605876, Val MAPE: 287.146118, Time: 17.05s
+2026-01-07 15:55:03,434 - run_single_tgcn - INFO - Epoch 72/100 - Train Loss: 0.262274, Val Loss: 0.356168, Val MAE: 0.392190, Val RMSE: 0.612217, Val MAPE: 299.040527, Time: 18.36s
+2026-01-07 15:55:20,637 - run_single_tgcn - INFO - Epoch 73/100 - Train Loss: 0.259156, Val Loss: 0.358176, Val MAE: 0.392556, Val RMSE: 0.613511, Val MAPE: 299.147736, Time: 17.20s
+2026-01-07 15:55:37,186 - run_single_tgcn - INFO - Epoch 74/100 - Train Loss: 0.260740, Val Loss: 0.369075, Val MAE: 0.394628, Val RMSE: 0.623916, Val MAPE: 298.196747, Time: 16.55s
+2026-01-07 15:55:53,202 - run_single_tgcn - INFO - Epoch 75/100 - Train Loss: 0.265006, Val Loss: 0.363226, Val MAE: 0.400489, Val RMSE: 0.618806, Val MAPE: 290.495728, Time: 16.02s
+2026-01-07 15:56:09,049 - run_single_tgcn - INFO - Epoch 76/100 - Train Loss: 0.260234, Val Loss: 0.358729, Val MAE: 0.394235, Val RMSE: 0.613531, Val MAPE: 294.257141, Time: 15.85s
+2026-01-07 15:56:25,117 - run_single_tgcn - INFO - Epoch 77/100 - Train Loss: 0.258977, Val Loss: 0.355433, Val MAE: 0.391238, Val RMSE: 0.612485, Val MAPE: 293.242401, Time: 16.07s
+2026-01-07 15:56:41,265 - run_single_tgcn - INFO - Epoch 78/100 - Train Loss: 0.257332, Val Loss: 0.358371, Val MAE: 0.398929, Val RMSE: 0.613352, Val MAPE: 301.973450, Time: 16.15s
+2026-01-07 15:56:58,288 - run_single_tgcn - INFO - Epoch 79/100 - Train Loss: 0.253796, Val Loss: 0.362067, Val MAE: 0.390868, Val RMSE: 0.618368, Val MAPE: 303.841400, Time: 17.02s
+2026-01-07 15:57:14,991 - run_single_tgcn - INFO - Epoch 80/100 - Train Loss: 0.258792, Val Loss: 0.353173, Val MAE: 0.390227, Val RMSE: 0.609014, Val MAPE: 304.469421, Time: 16.70s
+2026-01-07 15:57:32,304 - run_single_tgcn - INFO - Epoch 81/100 - Train Loss: 0.259269, Val Loss: 0.361601, Val MAE: 0.391768, Val RMSE: 0.616954, Val MAPE: 303.891754, Time: 17.31s
+2026-01-07 15:57:32,304 - run_single_tgcn - INFO - Early stopping at epoch 81
+2026-01-07 15:57:32,305 - run_single_tgcn - INFO - Training completed. Best val loss: 0.348531
+2026-01-07 15:57:32,305 - run_single_tgcn - INFO - Total training time: 0h 21m 34s (1294.63s)
+2026-01-07 15:57:32,322 - run_single_tgcn - INFO - Loaded checkpoint from epoch 71
+2026-01-07 15:57:32,322 - run_single_tgcn - INFO - Loaded best model for evaluation
+2026-01-07 15:57:32,323 - run_single_tgcn - INFO - Evaluating on test set...
+2026-01-07 15:57:32,483 - run_single_tgcn - INFO - pred(norm) range: -2.186 ~ 1.091
+2026-01-07 15:57:32,484 - run_single_tgcn - INFO - pred(real) range: 32.297 ~ 72.814
+2026-01-07 15:57:32,485 - run_single_tgcn - INFO - y(real) range: 8.667 ~ 70.000
+2026-01-07 15:57:32,650 - run_single_tgcn - INFO - pred(norm) range: -2.468 ~ 1.203
+2026-01-07 15:57:32,651 - run_single_tgcn - INFO - pred(real) range: 28.808 ~ 74.208
+2026-01-07 15:57:32,652 - run_single_tgcn - INFO - y(real) range: 8.667 ~ 70.000
+2026-01-07 15:57:32,810 - run_single_tgcn - INFO - pred(norm) range: -3.060 ~ 1.258
+2026-01-07 15:57:32,811 - run_single_tgcn - INFO - pred(real) range: 21.488 ~ 74.887
+2026-01-07 15:57:32,811 - run_single_tgcn - INFO - y(real) range: 5.556 ~ 70.000
+2026-01-07 15:57:32,973 - run_single_tgcn - INFO - pred(norm) range: -4.393 ~ 1.558
+2026-01-07 15:57:32,974 - run_single_tgcn - INFO - pred(real) range: 5.003 ~ 78.596
+2026-01-07 15:57:32,975 - run_single_tgcn - INFO - y(real) range: 2.000 ~ 70.000
+2026-01-07 15:57:33,141 - run_single_tgcn - INFO - pred(norm) range: -4.247 ~ 1.361
+2026-01-07 15:57:33,142 - run_single_tgcn - INFO - pred(real) range: 6.804 ~ 76.155
+2026-01-07 15:57:33,143 - run_single_tgcn - INFO - y(real) range: 2.000 ~ 70.000
+2026-01-07 15:57:33,303 - run_single_tgcn - INFO - pred(norm) range: -3.744 ~ 1.358
+2026-01-07 15:57:33,304 - run_single_tgcn - INFO - pred(real) range: 13.034 ~ 76.119
+2026-01-07 15:57:33,304 - run_single_tgcn - INFO - y(real) range: 4.375 ~ 70.000
+2026-01-07 15:57:33,474 - run_single_tgcn - INFO - pred(norm) range: -4.264 ~ 1.399
+2026-01-07 15:57:33,475 - run_single_tgcn - INFO - pred(real) range: 6.606 ~ 76.630
+2026-01-07 15:57:33,476 - run_single_tgcn - INFO - y(real) range: 3.000 ~ 70.000
+2026-01-07 15:57:33,653 - run_single_tgcn - INFO - pred(norm) range: -4.205 ~ 1.323
+2026-01-07 15:57:33,654 - run_single_tgcn - INFO - pred(real) range: 7.330 ~ 75.684
+2026-01-07 15:57:33,655 - run_single_tgcn - INFO - y(real) range: 4.375 ~ 70.000
+2026-01-07 15:57:33,829 - run_single_tgcn - INFO - pred(norm) range: -3.085 ~ 1.784
+2026-01-07 15:57:33,830 - run_single_tgcn - INFO - pred(real) range: 21.178 ~ 81.386
+2026-01-07 15:57:33,831 - run_single_tgcn - INFO - y(real) range: 8.333 ~ 70.000
+2026-01-07 15:57:33,930 - run_single_tgcn - INFO - pred(norm) range: -2.273 ~ 1.094
+2026-01-07 15:57:33,931 - run_single_tgcn - INFO - pred(real) range: 31.221 ~ 72.853
+2026-01-07 15:57:33,931 - run_single_tgcn - INFO - y(real) range: 12.625 ~ 70.000
+2026-01-07 15:57:33,944 - run_single_tgcn - INFO - Test Results:
+2026-01-07 15:57:33,944 - run_single_tgcn - INFO -   MAE: 5.263481
+2026-01-07 15:57:33,944 - run_single_tgcn - INFO -   RMSE: 8.272839
+2026-01-07 15:57:33,945 - run_single_tgcn - INFO -   MAPE: 15.676332
+2026-01-07 15:57:33,945 - run_single_tgcn - INFO - ==================================================
+2026-01-07 15:57:33,945 - run_single_tgcn - INFO - Final Test Results:
+2026-01-07 15:57:33,946 - run_single_tgcn - INFO -   MAE: 5.263481
+2026-01-07 15:57:33,946 - run_single_tgcn - INFO -   RMSE: 8.272839
+2026-01-07 15:57:33,946 - run_single_tgcn - INFO -   MAPE: 15.676332
+2026-01-07 15:57:33,946 - run_single_tgcn - INFO - ==================================================

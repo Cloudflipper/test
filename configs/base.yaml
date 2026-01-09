@@ -1,0 +1,41 @@
+# Base configuration for spatiotemporal forecasting benchmark
+dataset:
+  name: "los"
+  root: "./data"
+  num_nodes: 50
+  num_features: 3
+  seq_len: 12  # Input sequence length (Tin)
+  pred_len: 12  # Prediction length (Tout)
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+graph:
+  type: "los"
+  self_loop: true
+  normalize: "symmetric"  # "symmetric", "asymmetric", or null
+
+training:
+  batch_size: 32
+  epochs: 100
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  early_stopping:
+    patience: 10
+    min_delta: 0.0001
+  gradient_clip: 5.0
+
+evaluation:
+  metrics: ["MAE", "RMSE", "MAPE"]
+  save_predictions: false
+
+model: {}
+
+paths:
+  checkpoint_dir: "./checkpoints"
+  log_dir: "./logs"
+  results_dir: "./results"
+
+seed: 42
+device: "cuda"  # Will fallback to cpu if cuda not available
+

@@ -1,0 +1,40 @@
+# LOS (Los Angeles) traffic dataset configuration
+dataset:
+  name: "los"
+  root: "./data"
+  # num_nodes and num_features are inferred from data files
+  seq_len: 12  # Input sequence length (Tin)
+  pred_len: 12  # Prediction length (Tout)
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+graph:
+  type: "los"  # Loads from data/los_adj.csv (already normalized)
+  # No self_loop or normalize for LOS (adjacency is pre-normalized)
+
+training:
+  batch_size: 32
+  epochs: 100
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  early_stopping:
+    patience: 10
+    min_delta: 0.0001
+  gradient_clip: 5.0
+
+evaluation:
+  metrics: ["MAE", "RMSE", "MAPE"]
+  save_predictions: false
+
+paths:
+  checkpoint_dir: "./checkpoints"
+  log_dir: "./logs"
+  results_dir: "./results"
+
+seed: 42
+device: "cuda"  # Will fallback to cpu if cuda not available
+
+model:
+  hidden_dim: 64
+

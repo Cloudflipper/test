@@ -1,0 +1,4 @@
+# TGCN model configuration
+model:
+  hidden_dim: 64
+

@@ -1,0 +1,23 @@
+2026-01-07 15:23:30,372 - run_single_tgcn - INFO - Running model: tgcn
+2026-01-07 15:23:30,373 - run_single_tgcn - INFO - Device: cpu
+2026-01-07 15:23:30,373 - run_single_tgcn - INFO - Creating dataloaders...
+2026-01-07 15:23:30,451 - run_single_tgcn - INFO - ===== Quick Sanity Check (A) =====
+2026-01-07 15:23:30,454 - run_single_tgcn - INFO - A: y(norm) range: -0.016513 ~ -0.005873 | y shape: (32, 12, 207, 1)
+2026-01-07 15:23:30,454 - run_single_tgcn - INFO - ==================================
+2026-01-07 15:23:30,454 - run_single_tgcn - INFO - ===== Transform Stats (B) =====
+2026-01-07 15:23:30,455 - run_single_tgcn - INFO - transform type: <class 'datasets.transforms.DataTransform'>
+2026-01-07 15:23:30,455 - run_single_tgcn - INFO - transform.scaler.mean: tensor range 103.853897 ~ 103.853897
+2026-01-07 15:23:30,455 - run_single_tgcn - INFO - transform.scaler.std: tensor range 5764.408691 ~ 5764.408691
+2026-01-07 15:23:30,455 - run_single_tgcn - INFO - ================================
+2026-01-07 15:23:30,455 - run_single_tgcn - INFO - Building graph...
+2026-01-07 15:23:30,460 - run_single_tgcn - INFO - Adj shape: (207, 207)
+2026-01-07 15:23:30,461 - run_single_tgcn - INFO - Adj min/max: 0.000000 / 1.000000
+2026-01-07 15:23:30,461 - run_single_tgcn - INFO - Creating model...
+2026-01-07 15:23:30,461 - run_single_tgcn - INFO - LOS dataset: 207 nodes, 1 features
+2026-01-07 15:23:30,462 - run_single_tgcn - INFO - Model parameters: 65
+2026-01-07 15:23:31,144 - run_single_tgcn - INFO - Starting training...
+2026-01-07 15:23:31,145 - run_single_tgcn - INFO - Starting training for 100 epochs
+2026-01-07 15:23:44,875 - run_single_tgcn - INFO - Epoch 1/100 - Train Loss: 0.029157, Val Loss: 0.012228, Val MAE: 0.087726, Val RMSE: 0.110845, Val MAPE: 1172.641968, Time: 13.73s
+2026-01-07 15:24:00,058 - run_single_tgcn - INFO - Epoch 2/100 - Train Loss: 0.006535, Val Loss: 0.002765, Val MAE: 0.041200, Val RMSE: 0.052674, Val MAPE: 551.927246, Time: 15.18s
+2026-01-07 15:24:15,216 - run_single_tgcn - INFO - Epoch 3/100 - Train Loss: 0.001632, Val Loss: 0.000816, Val MAE: 0.022371, Val RMSE: 0.028614, Val MAPE: 299.578339, Time: 15.15s
+2026-01-07 15:24:30,326 - run_single_tgcn - INFO - Epoch 4/100 - Train Loss: 0.000525, Val Loss: 0.000287, Val MAE: 0.013299, Val RMSE: 0.016962, Val MAPE: 178.056992, Time: 15.11s

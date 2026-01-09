@@ -1,0 +1,10 @@
+# Template for model configuration
+# Copy this file and rename it to <model_name>.yaml when integrating a new model
+# 
+# Example:
+# model:
+#   type: "model_name"
+#   hidden_size: 64
+#   num_layers: 2
+#   dropout: 0.1
+

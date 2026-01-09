@@ -1,0 +1,4 @@
+Model: tgcn_att
+MAE: 5.253699
+RMSE: 8.202092
+MAPE: 15.183486

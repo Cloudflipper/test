@@ -1,0 +1,4 @@
+model:
+  hidden_dim: 64
+  kg_dim: 20
+  kg_emb_path: ./data/sz_kg_embedding.csv
